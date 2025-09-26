@@ -16,14 +16,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: rgba(101, 37, 150, 0.434);
     position: fixed;
-    width: 100%;
+    width: 80%;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%); /* adjust back to center */
     padding: 10px 20px;
-    z-index: 1000;
-   
+   z-index: 1000;
+   border: 2px solid rgba(101, 37, 150, 0.434);
+   border-radius: 50px ; 
+   margin-top: 30px;
 }
 
 .nav ul {
@@ -47,7 +50,7 @@ body {
 }
 
 .nav ul li.active a {
-  color: yellow;
+  color: rgb(31, 210, 100);
   border-radius: 5px;
 }
 
@@ -60,4 +63,78 @@ section {
     scroll-margin-top: 70px; 
     padding: 40px;
     box-sizing: border-box;
+}
+
+ 
+  #home {
+  height: 100vh;  
+  display: flex;
+  align-items: center;      
+  justify-content: space-between; 
+  padding: 0 40px;        
+  
+  /* background image settings */
+  background-image: url("image/purplebg.jpg");
+  background-position: center; /* centers the image */
+  background-repeat: no-repeat; /* no repeating */
+  background-size: cover;   
+
+}
+
+  /* adjust size */
+  #home h3 {
+    font-size: 1.1rem;   
+    z-index: 1;  
+    padding-left: 30px;
+    color: white;
+  }
+
+#home p {
+  font-size: 1.2rem;
+  max-width: 500px;  /* optional: keeps text from stretching too wide */
+  color: white;
+}
+
+#home img {
+  margin-top: 90px;
+   width: 500px;   
+    height: auto;
+}
+
+
+.buttons .btn {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: Arial;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons .btn.outline {
+    background: transparent;
+    border: 2px solid #8c1d92;
+    border-radius: 50px;
+}
+
+.resume{
+  font-size: small;
+}
+
+.buttons .btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+  
+.text-content {
+  display: flex;
+  flex-direction: column; /* stack h1, p, and button vertically */
+  justify-content: center; /* centers vertically inside its own box */
+ align-items: center;
 }
