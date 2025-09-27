@@ -24,31 +24,61 @@
     </ul>
 </div>
 
-</div>
-</div>
-</div>
+    <!-- LANDING PAGE -->
       <section id="home">
-          <div class="text-content">
-    <h3>Hi I'm RODELYN C. CARDINAS</h3>
-    <p>fhdfufsfuhfjhhgjdgjfd</p>
+          <div class="home-text">
+    <h4>Hi I'm Rodelyn C. Cardinas</h4>
+    <h1>Hello, ERNZ I LOVE YOU</h1>
+    <p>Thank you for 4years of love and counting..</p>
 
      <div class="buttons resume">
-                <a href="resume.html" class="btn outline">Resume</a>
+                <a href="resume.html" class="btn outline">Love</a>
             </div>
+
+            <div class="social-icons">
+               <a href="https://www.facebook.com/abbytoy0001" target="_blank"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://www.instagram.com/abby_zero9?igsh=Yzg4Z3p1amxiZDRm&utm_source=ig_contact_invite" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://tiktok.com/@itsme_keraa" target="_blank"><i class="fab fa-tiktok"></i></a>
+               <a href="https://twitter.com/chiclylyn" target="_blank"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.linkedin.com/in/cardinas-rodelyn-799352387?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div> 
   </div>
-  
-     <img src="image/profile.png" alt="My Image">
-
-    
+     <img src="image/homeprofile.png" alt="My Image"> 
   </section>
 
+  <!-- END OF LANDING PAGE -->
+
+  <!-- ABOUT SECTION -->
    <section id="about">
-    <h1>About</h1>
+          
+     <img src="image/aboutprofile.jpg" alt="My Image"> 
+     <div class="about-text">
+    <h1>About me</h1>
+    <p>dsfgsdfghhjchjxbvdfsuefe  fndufhdhfdhfheh dfdsjfhsdufdv sbsdfjh<br> fddshdgfudeyfhncjbxxjnznjxsjcdsjccsscj    fhfbhhbhsdhsgsdhf<br></p>
+    
+  </div>
   </section>
+  <!-- END OF ABOUT SECTION -->
 
+  <!-- BLOGS SECTION -->
   <section id="blogs">
-    <h1>Blogs</h1>
-  </section>
+  <div class="content">
+    <video controls class="blog-video">
+      <source src="catmeme.mp4" type="video/mp4">
+    </video>
+
+    <div class="blogs-text">
+      <h1>Blogs</h1>
+      <p>
+        dsfgsdfghhjchjxbvdfsuefe fndufhdhfdhfheh dfdsjfhsdufdv sbsdfjh <br>
+        fddshdgfudeyfhncjbxxjnznjxsjcdsjccsscj fhfbhhbhsdhsgsdhf <br>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- END OF BLOGS SECTION -->
+
 
   <section id="gallery">
     <h1>Gallery</h1>
@@ -57,7 +87,40 @@
    <section id="contacts">
     <h1>Contacts</h1>
   </section>
+  
+ <script>
+    const navLinks = document.querySelectorAll('.nav ul li a');
+    const sections = document.querySelectorAll('section');
 
+    // highlight on scroll
+    window.addEventListener('scroll', () => {
+      let current = "";
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 150; // adjust for navbar
+        const sectionHeight = section.clientHeight;
+
+        if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+          current = section.getAttribute("id");
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.parentElement.classList.remove("active");
+        if (link.getAttribute("href").includes(current)) {
+          link.parentElement.classList.add("active");
+        }
+      });
+    });
+
+    // highlight immediately on click
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.forEach(l => l.parentElement.classList.remove("active"));
+        link.parentElement.classList.add("active");
+      });
+    });
+  </script>
         
 </body>
 </html>
