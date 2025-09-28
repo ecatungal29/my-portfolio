@@ -86,10 +86,20 @@ section {
 
 /* home Profile img */
 #home img {
-  margin-top: 50px;
+  margin-top: 55px;
   width: 600px;   
   height: auto;
   margin-right: 5%;
+}
+
+#home img:hover {
+  animation: slideRightBack 2s ease-in-out; 
+}
+
+@keyframes slideRightBack {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(50px); }
+
 }
 
 .resume{
@@ -121,16 +131,18 @@ section {
 /* home text-content */
 .home-text {
   text-align: center;  
-  margin-left: 5%;
+  margin-left: 2%;
   margin-top: 10%;
 }
 
-.home-text h4 {
+.home-text h5 {
+  text-align: left;  
   font-size: 1.2rem;
   font-weight: normal;
   margin: 5px 0;  
   color:white;
-  margin-right: 40%;
+  margin-right: 50%;
+
 }
 
 .home-text h1 {
@@ -160,24 +172,8 @@ section {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.social-icons a:hover i.fa-facebook-f {
-    color: #207bf3;
-}
-
-.social-icons a:hover i.fa-instagram {
-    color: #ff3da8;
-}
-
-.social-icons a:hover i.fa-tiktok {
-    color: #4e4e4e;
-}
-
-.social-icons a:hover i.fa-twitter {
-    color: #1da1f2;
-}
-
-.social-icons a:hover i.fa-linkedin {
-    color: #207bf3;
+.social-icons a:hover i {
+  color: #ff3da8;
 }
 
 /* about section */
@@ -276,4 +272,72 @@ section {
 .blogs-text p {
   font-size: 16px;
   line-height: 1.6;
+}
+
+
+
+/* Gallery Section */
+#gallery {
+  min-height: 100vh;               
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  position: relative;
+
+  /* background image settings */
+  background-image: url("image/gallerybg.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
+}
+
+.gallery-text h1{
+   display:flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+  color: white;
+}
+
+.gallery-text div{
+  display: flex;
+  flex-wrap: wrap;          /* images will wrap to the next row if needed */
+  justify-content: center;  /* center images */
+  gap: 50px;                /* <--- adds 20px space between images */
+  margin-top: 40px;
+}
+
+#gallery img {
+  width: 300px;   
+  height: auto;
+  margin-top: 60px;
+  border-radius: 10px;  /* optional rounded corners */
+  transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+  transform: scale(1.1); /* zoom effect on hover */
+}
+
+
+
+
+
+/* Contacts Section */
+#contacts{
+  min-height: 100vh;               
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  position: relative;
+
+  /* background image settings */
+  background-image: url("image/contactbg.png");
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover;  
 }
