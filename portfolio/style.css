@@ -109,18 +109,18 @@ section {
     .buttons .btn {
     display: inline-block;
     margin: 10px 15px;
-    padding: 7px 7px;
+    padding: 10px 10px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border: 2px solid #5b9638;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 10%;
+
 }
 
     .buttons .btn .outline {
         background: transparent;
-        border: 2px solid #5b9638;
-        margin-left: 30px;
+     
     }
 
     .btn.outline {
