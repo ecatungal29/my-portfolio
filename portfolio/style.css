@@ -10,6 +10,7 @@ body {
 
 .logo img {
     height: 40px;
+    margin-left: 25px;
 
 }
 
@@ -81,15 +82,15 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* makes video cover the whole area */
+  object-fit: cover;
   z-index: -1; /* send video behind the content */
 }
 
 
 /* home Profile img */
 #home img {
-  margin-top: 60px;
-  width: 700px;
+  margin-top: 102px;
+  width: 600px;
   height: auto;
   margin-right: 2%;
 }
@@ -108,15 +109,15 @@ section {
     .buttons .btn {
     display: inline-block;
     margin: 10px 15px;
-    padding: 12px 25px;
+    padding: 7px 7px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-left: 10%;
+    margin-left: 10%;
 }
 
-    .buttons .btn.outline {
+    .buttons .btn .outline {
         background: transparent;
         border: 2px solid #5b9638;
         margin-left: 30px;
@@ -135,16 +136,6 @@ section {
   margin-left: 25%;
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #5b9638;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
 
 .btn:hover {
   background-color: #5b9638;
@@ -174,11 +165,19 @@ section {
 
 }
 
-.home-content h3 {
+.home-content h2 {
   font-size: 35px;
   font-weight: bold;
   margin: 5px 0;
   color:white;
+}
+
+.home-content h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  color:white;
+  margin-bottom: 10px;
 }
 
 .home-content p {
@@ -192,7 +191,7 @@ section {
 .social-icons {
   display: flex;
   gap: 20px;
-  margin-left: 20%; 
+  margin-left: 20%;
   margin-top: 5px;
 }
 
@@ -266,7 +265,7 @@ section {
 
 
 
-/* General Section Styling */
+/* Skills Section Styling */
 #skills {
   min-height: 100vh;
   display: flex;
@@ -410,7 +409,7 @@ section {
   box-sizing: border-box;
   position: relative;
 
-  /* background image settings */
+  /* background video settings */
   background-image: url("image/blogsbg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -430,6 +429,8 @@ section {
   width: 45%;
   border-radius: 12px;
   background: #f8fff5;
+  margin-left: 10px;
+  margin-top: 25px;
 }
 
 .blogs-text {
@@ -441,12 +442,14 @@ section {
 .blogs-text h1 {
   font-size: 2.5rem;
   margin-bottom: 90px;
-  margin-left: 40%;
+  margin-left: 30%;
 }
 
 .blogs-text p {
   font-size: 17px;
   line-height: 1.6;
+  margin-right: 10%;
+  margin-bottom: 10%;
 }
 
 
@@ -651,7 +654,7 @@ button {
 button:hover {
   background: #5b9638;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 195, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(17, 140, 117, 0.3);
 }
 
 /* === Responsive Design === */
@@ -688,7 +691,7 @@ button:hover {
   top: 10px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 2rem;
+  font-size: 3rem;
   color: #ccc;
   cursor: pointer; /* make it clickable */
   transition: color 0.3s ease, transform 0.3s ease;
@@ -699,7 +702,7 @@ button:hover {
 }
 
 .likes-icon.liked i {
-  color:#5b9638; /* stays blue after click */
+  color:#5b9638;
 }
 
 .footer-container {
@@ -732,6 +735,7 @@ button:hover {
 }
 
 .footer-about h3 {
+  margin-top: 3%;
   margin-bottom: 5px;
   position: absolute;
   top: 10px;
@@ -740,7 +744,7 @@ button:hover {
   font-size: 1.8rem;
   pointer-events: none;
   transition: color 0.3s ease, transform 0.3s ease;
-  color:white;
+  color:#ccc;
 
 }
 
@@ -759,7 +763,6 @@ button:hover {
   position: absolute;
   top: 10px;
   right: 120px;
-  color: white;
   text-align: left;
   font-family: 'Segoe UI', sans-serif;
   margin-bottom: 100px;
