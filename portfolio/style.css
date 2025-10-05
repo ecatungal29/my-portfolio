@@ -7,7 +7,6 @@ body {
 	padding: 0;
 	font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 	line-height: 1.6;
-	line-height: 1.6;
 }
 h1,
 h2,
@@ -446,7 +445,6 @@ section {
 /* Skills Section Styling */
 /* Skills Section */
 #skills {
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -469,9 +467,6 @@ section {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
-
-
   }
   
   #skills::before {
@@ -641,7 +636,7 @@ section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 80px 5%;
+	padding: 60px 20px;
 	box-sizing: border-box;
 	position: relative;
 	background-image: url("image/blogsbg.jpg");
@@ -656,17 +651,21 @@ section {
 	align-items: center;
 	justify-content: space-between;
 	gap: 60px;
-	max-width: 1200px;
+	max-width: 1000px;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.7);
-	padding: 40px;
+	padding: 20px;
 	border-radius: 16px;
 	box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+	margin-top: 210px;
+	margin-bottom: 150px;
 }
 
 .video-container {
 	width: 50%;
 	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .blog-video {
@@ -709,10 +708,9 @@ section {
 
 .blogs-text h1 {
 	font-size: 2.5rem;
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	color: #fff;
 	position: relative;
-	padding-bottom: 15px;
 }
 
 .blogs-text h1::after {
@@ -729,7 +727,7 @@ section {
 .blogs-text p {
 	font-size: 1.1rem;
 	line-height: 1.8;
-	margin: 0 0 20px;
+	margin-bottom: 25%;
 	color: rgba(255, 255, 255, 0.9);
 }
 
@@ -882,7 +880,6 @@ section {
 	padding: 60px 20px;
 	color: #fff;
 	text-align: center;
-	font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -897,20 +894,22 @@ section {
 
 #contact h1 {
 	font-size: 2.5rem;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
+	margin-top: 0;
 	position: relative;
 }
 
 /*  Contact Container  */
 .contact-container {
-	width: 90%;
+	width: 30%;
 	max-width: 1000px;
 	margin: 0 auto;
-	background:  rgba(0, 0, 0, 0.5);
 	padding: 30px;
 	border-radius: 15px;
-	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.411);
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-top: 50px;
 }
 
 /* === Contact Form === */
