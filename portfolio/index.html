@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 
@@ -25,32 +26,53 @@
 </div>
 
     <!-- LANDING PAGE -->
-      <section id="home">
+    <section id="home">
+      <div class="video-background">
         <video autoplay muted loop playsinline id="homeVideo">
-    <source src="video/homebg.mp4" type="video/mp4">
-    Your browser does not support HTML5 video.
-  </video>
-
-    <div class="home-content">
-    <h6>Hello, It's Me</h6>
-    <h2>Rodelyn Cardinas</h2>
-    <h3>NCII Certified in Computer System Servicing(CSS)</h3>
-  <p>I’m a dedicated student and aspiring IT professional<br> passionate about learning, exploring technology, and <br>creating projects that blend creativity with problem-solving.</p>
-    <div class="buttons">
-                <a href="resume.html" class="btn outline">Resume</a>
+          <source src="video/homebg.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+      </div>
+    
+      <div class="container">
+        <div class="home-content">
+          <div class="intro-text">
+            <h6 class="greeting">Hello, I'm</h6>
+            <h1 class="name">Rodelyn Cardinas</h1>
+            <h2 class="title">NCII Certified in Computer System Servicing</h2>
+            <p class="description">I'm a dedicated student and aspiring IT professional passionate about learning, exploring technology, and creating projects that blend creativity with problem-solving.</p>
+            
+            <div class="cta-buttons">
+              <a href="resume.html" class="btn primary-btn">View Resume</a>
+              <a href="#contact" class="btn secondary-btn">Get in Touch</a>
             </div>
-
-<div class="social-icons">
-  <a href="https://www.facebook.com/abbytoy0001" target="_blank"><i class="fab fa-facebook-f"></i></a>
-  <a href="https://www.instagram.com/abby_zero9" target="_blank"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388" target="_blank"><i class="fab fa-linkedin"></i></a>
-  <a href="https://github.com/Abby122001" target="_blank"><i class="fab fa-github"></i></a>
-</div>
-
-
-  </div>
-    <img src="image/homeprofile.png" alt="My Image">
-  </section>
+    
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/rodelyn-cardinas-8937a4388" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/Abby122001" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.facebook.com/abbytoy0001" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/abby_zero9" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+    
+          <div class="profile-image">
+            <div class="image-container">
+              <img src="image/profile.png" alt="Rodelyn Cardinas - IT Professional" loading="eager">
+              <div class="highlight-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   <!-- ABOUT SECTION -->
   <section id="about">
@@ -69,63 +91,75 @@ I believe that with continuous learning and hands-on practice, <br>I can turn my
   </section>
 
 <!-- Skills Section -->
+<!-- Skills Section -->
 <section id="skills">
   <h1>Skills</h1>
-  <p class="skills-subtitle">My technical abilities represented in percentage</p>
+  <p class="skills-subtitle">My technical expertise in key areas</p>
 
-  <div class="skills-graph">
-    <div class="skill">
-      <div class="cylinder blue" data-percent="99">
-        <span class="percent">99%</span>
+  <div class="skills-container">
+    <div class="skill-item">
+      <div class="skill-circle" data-percent="99">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-circle" stroke="#4a6bff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+        </svg>
+        <span class="skill-percent">99%</span>
       </div>
-      <p>Installing Windows</p>
+      <h3>Installing Windows</h3>
     </div>
 
-    <div class="skill">
-      <div class="cylinder cyan" data-percent="40">
-        <span class="percent">40%</span>
+    <div class="skill-item">
+      <div class="skill-circle" data-percent="40">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-circle" stroke="#00c6ff" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+        </svg>
+        <span class="skill-percent">40%</span>
       </div>
-      <p>Networking</p>
+      <h3>Networking</h3>
     </div>
 
-    <div class="skill">
-      <div class="cylinder amber" data-percent="30">
-        <span class="percent">30%</span>
+    <div class="skill-item">
+      <div class="skill-circle" data-percent="30">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-circle" stroke="#ff7675" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+        </svg>
+        <span class="skill-percent">30%</span>
       </div>
-      <p>Troubleshooting</p>
+      <h3>Troubleshooting</h3>
     </div>
 
-    <div class="skill">
-      <div class="cylinder purple" data-percent="60">
-        <span class="percent">60%</span>
+    <div class="skill-item">
+      <div class="skill-circle" data-percent="60">
+        <svg class="progress-ring" width="120" height="120">
+          <circle class="progress-ring-circle" stroke="#a55eea" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+        </svg>
+        <span class="skill-percent">60%</span>
       </div>
-      <p>Database Management</p>
+      <h3>Database Management</h3>
     </div>
   </div>
 </section>
-
-
-
-
 
   <!-- BLOGS SECTION -->
   <section id="blogs">
-  <div class="content">
-    <video controls class="blog-video">
-      <source src="video/myblog.mp4" type="video/mp4">
-    </video>
+    <div class="content">
+      <div class="video-container">
+        <video controls class="blog-video">
+          <source src="video/myblog.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="blogs-links">
+          <a href="https://youtube.com/@itsmeabby12" target="_blank">
+            <i class="fas fa-external-link-alt"></i> Watch on YouTube
+          </a>
+        </div>
+      </div>
 
-    <div class="blogs-text">
-      <h1>Blogs</h1>
-     <p>
-Through my blogs, I hope not only to track my own progress but also to inspire others who share the same passion for technology. 
-Each post is a step forward in my journey — a chance to learn, to grow, and to contribute. 
-As I continue exploring the IT field, I look forward to sharing more insights, experiences, and meaningful lessons that shape me into the professional I aspire to become.  
-</p>
+      <div class="blogs-text">
+        <h1>Blogs</h1>
+        <p>Through my blogs, I hope not only to track my own progress but also to inspire others who share the same passion for technology. Each post is a step forward in my journey — a chance to learn, to grow, and to contribute. As I continue exploring the IT field, I look forward to sharing more insights, experiences, and meaningful lessons that shape me into the professional I aspire to become.</p>
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
   <!-- GALLERY SECTION -->
   <section id="gallery">
         <div class="container">
@@ -147,7 +181,7 @@ As I continue exploring the IT field, I look forward to sharing more insights, e
                 <div class="gallery-item">
                     <img src="image/aboutprofile.jpg" alt="School" />
                     <div class="gallery-caption">Selfie</div>
-                </div>               
+                </div>
             </div>
         </div>
     </section>
@@ -275,29 +309,82 @@ As I continue exploring the IT field, I look forward to sharing more insights, e
 
 
 <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const cylinders = document.querySelectorAll(".cylinder");
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      const cylinder = entry.target;
-      const percent = cylinder.getAttribute("data-percent");
-
-      if (entry.isIntersecting) {
-        // Animate fill
-        cylinder.style.setProperty("--target-height", percent + "%");
-        cylinder.classList.add("active");
-      } else {
-        // Reset to replay when leaving view
-        cylinder.classList.remove("active");
-        cylinder.style.setProperty("--target-height", "0%");
-      }
+  document.addEventListener('DOMContentLoaded', function() {
+    const circles = document.querySelectorAll('.progress-ring-circle');
+    
+    // Calculate the circumference of the circle
+    const radius = 52;
+    const circumference = radius * 2 * Math.PI;
+    
+    // Set the initial stroke-dasharray and stroke-dashoffset
+    circles.forEach(circle => {
+      const circleElement = circle;
+      const percent = circle.parentElement.getAttribute('data-percent');
+      const offset = circumference - (percent / 100) * circumference;
+      
+      circleElement.style.strokeDasharray = circumference;
+      circleElement.style.strokeDashoffset = circumference;
+      
+      // Add click event to each skill item
+      const skillItem = circle.closest('.skill-item');
+      skillItem.addEventListener('click', () => {
+        animateCircle(circleElement, percent, circumference);
+      });
     });
-  }, { threshold: 0.3 });
-
-  cylinders.forEach(cylinder => observer.observe(cylinder));
-});
-</script>
+    
+    // Animate circles when they come into view
+    const skillItems = document.querySelectorAll('.skill-item');
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const circle = entry.target.querySelector('.progress-ring-circle');
+          const percent = entry.target.querySelector('.skill-circle').getAttribute('data-percent');
+          animateCircle(circle, percent, circumference);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    skillItems.forEach(item => {
+      observer.observe(item);
+    });
+    
+    // Function to animate the circle
+    function animateCircle(circle, percent, circumference) {
+      const offset = circumference - (percent / 100) * circumference;
+      
+      // Reset animation
+      circle.style.transition = 'none';
+      circle.style.strokeDashoffset = circumference;
+      
+      // Trigger reflow
+      circle.getBoundingClientRect();
+      
+      // Animate
+      circle.style.transition = 'stroke-dashoffset 1.5s ease-in-out';
+      circle.style.strokeDashoffset = offset;
+      
+      // Animate the percentage counter
+      const percentElement = circle.parentElement.querySelector('.skill-percent');
+      if (percentElement) {
+        let current = 0;
+        const duration = 1500;
+        const increment = percent / (duration / 16); // 60fps
         
+        const animate = () => {
+          current += increment;
+          if (current < percent) {
+            percentElement.textContent = `${Math.round(current)}%`;
+            requestAnimationFrame(animate);
+          } else {
+            percentElement.textContent = `${percent}%`;
+          }
+        };
+        
+        animate();
+      }
+    }
+  });
+  </script>
 </body>
 </html>
